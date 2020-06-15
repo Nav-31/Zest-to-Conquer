@@ -14,7 +14,7 @@ p=[]
 for i in range(n):
     avg=0
     for j in range(1,4):
-        avg=avg+int(record[i][j])
+        avg=avg+float(record[i][j])
     avg= (avg/3)
     p.append(avg)
 
