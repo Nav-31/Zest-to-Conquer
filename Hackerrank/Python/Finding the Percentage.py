@@ -27,3 +27,4 @@ print(database)
 i=input("Display d avg of:")
 x=float(database[i])
 print('%.2f'%x)                     #setting precision to 2 decimal places
+
