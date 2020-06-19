@@ -1,15 +1,9 @@
 try:
-    n = int(input("Enter the no. of participants:"))
-    arr = map(int, input().split())                         #Input the scores seperated by spaces
+    n=int(input("Enter the no. of Participants:"))
+    ar=set(map(int,input().split()))               #Enter the score in d same line vth spaces
 except:
-    print("ERROR! Enter numeric input only")
-
-l=list(arr)
-
-l.sort(reverse=True)
-x=max(l)
-for i in range(n):
-    if(l[i]==x):
-        continue
-    print("The Runner-up score is",l[i])
+    print("ERROR! Enter numeric input only!")
     quit()
+a=list(ar)
+a.sort()
+print("Runner-Up Score:",a[len(a)-2])
